@@ -10,5 +10,5 @@ export class FooterComponent {
   constructor() {
       this.anio = new Date().getFullYear();
   }
-
+  
 }

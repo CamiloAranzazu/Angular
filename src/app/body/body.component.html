@@ -1,5 +1,6 @@
 <div class="row">
 
+<<<<<<< HEAD
     <div class="col">
         <h5>Ejemplo de *ngIf</h5>
         <hr>
@@ -10,14 +11,42 @@
             </div>
         </div>
         <button (click)="mostrar = !mostrar" class="btn btn-outline color">Mostrar/Ocultar</button>
+=======
+    <div class="col" >
+          <h5>Ejemplo de *ngIf</h5>
+          <hr>
+            <div *ngIf="mostrar" class="card bg-light mb-3" style="max-width: 18rem; " >
+                  <div class="card-body">
+                  <h5 class="card-title">{{frase.autor}}</h5>
+                  <p class="card-text">{{frase.mensaje}}</p>
+                  </div>
+            </div>
+            <button (click)="mostrar = !mostrar" class="btn btn-outline-secondary">
+                OculatarMostrar
+            </button>
+>>>>>>> 3cbe8c8bb5302c082bfdf4284aa2d6f261b19c65
     </div>
+    
 
     <div class="col">
+<<<<<<< HEAD
         <h5>Ejemplo de *ngFor</h5>
         <hr>
         <ul class="list-group">
             <li *ngFor="let c of tecnologias; let i= index" class="list-group-item">{{i+1}} - {{c}}</li>
         </ul>
     </div>
+=======
+          <h5>Ejemplo de *ngFor</h5>
+          <hr>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let c of tecnologias; let i = index">{{i+1}} - {{c}}</li>
+            
+          </ul>
+    </div>
+    
+          
+</div>
+>>>>>>> 3cbe8c8bb5302c082bfdf4284aa2d6f261b19c65
 
 </div>
