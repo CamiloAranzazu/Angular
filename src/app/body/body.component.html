@@ -1,24 +1,23 @@
 <div class="row">
 
     <div class="col">
-          <h5>Col 1</h5>
-          <hr>
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Light card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-          </div>
-    </div>
-
-    <div class="col">
-          <h5>Col 2</h5>
-          <hr>
-    </div>
-    <div class="col">
-        <h5>Col 2</h5>
+        <h5>Ejemplo de *ngIf</h5>
         <hr>
-  </div>
-          
-</div>
+        <div *ngIf="mostrar" class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{frase.autor}}</h5>
+                <p class="card-text">{{frase.mensaje}}</p>
+            </div>
+        </div>
+        <button (click)="mostrar = !mostrar" class="btn btn-outline color">Mostrar/Ocultar</button>
+    </div>
 
+    <div class="col">
+        <h5>Ejemplo de *ngFor</h5>
+        <hr>
+        <ul class="list-group">
+            <li *ngFor="let c of tecnologias; let i= index" class="list-group-item">{{i+1}} - {{c}}</li>
+        </ul>
+    </div>
+
+</div>
